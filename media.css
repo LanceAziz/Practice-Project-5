@@ -1,0 +1,26 @@
+@media screen and (max-width: 1200px) {
+    .cover .cover-content h2 {
+        font-size: 30px;
+    }
+    .cover .cover-content h1 {
+        font-size: 60px;
+    }
+    .cover .cover-content p {
+        font-size: 20px;
+    }
+    .cover .cover-content button {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cover .cover-content h2 {
+        font-size: 20px;
+    }
+    .cover .cover-content h1 {
+        font-size: 40px;
+    }
+    .cover .cover-content p {
+        font-size: 12px;
+    }
+}

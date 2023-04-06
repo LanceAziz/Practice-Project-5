@@ -1,0 +1,886 @@
+/*Generals*/
+*
+{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.clear-fix
+{
+    clear: both;
+}
+.margin90
+{
+    width: 70%;
+    margin: 50px auto;
+}
+/*-----Section 1-----*/
+.section1
+{
+    color: white;
+    background-image: url(Images/Section1_Image1.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+.black
+{
+    height: 100vh;
+    background-color: rgba(17, 20, 24,0.8);
+}
+/*Navigation Bar*/
+.nav
+{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 9999;
+}
+.nav-logo
+{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+}
+.nav-logo a
+{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+}
+.nav-menu
+{
+    width: 90%;
+    
+}
+.nav-menu ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.nav-menu ul li
+{
+    list-style-type: none;
+    width: 5%;
+}
+.nav-menu ul li span
+{
+    color: #20c997;
+}
+/*Cover*/
+.cover
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cover .cover-content
+{
+    width: 50%;
+    text-align: center;
+}
+.cover .cover-content h2,h1,p,button
+{
+    margin: 10px 0px;
+}
+.cover .cover-content h2
+{
+    font-size: 30px;
+    font-weight: 500;
+}
+.cover .cover-content h1
+{
+    font-size: 60px;
+    font-weight: 600;
+}
+.cover .cover-content h1::after
+{
+    content: "";
+    animation-name: typing;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+@keyframes typing 
+{
+    0%{content: "|";}
+    1%{content: "O|";}
+    2%{content: "Ol|";}
+    3%{content: "Oli|";}
+    4%{content: "Oliv|";}
+    5%{content: "Olivi|";}
+    6%{content: "Olivia|";}
+    7%{content: "Olivia S|";}
+    8%{content: "Olivia Si|";}
+    9%{content: "Olivia Sim|";}
+    10%{content: "Olivia Simo|";}
+    11%{content: "Olivia Simon|";}
+    12%{content: "Olivia Simone|";}
+    13%{content: "Olivia Simon|";}
+    14%{content: "Olivia Simo|";}
+    15%{content: "Olivia Sim|";}
+    16%{content: "Olivia Si|";}
+    17%{content: "Olivia S|";}
+    18%{content: "Olivia |";}
+    19%{content: "Olivi|";}
+    20%{content: "Oliv|";}
+    21%{content: "Ol|";}
+    22%{content: "O|";}
+    23%{content: "|";}
+    24%{content: "a|";}
+    25%{content: "a F|";}
+    26%{content: "a Fr|";}
+    27%{content: "a Fre|";}
+    28%{content: "a Free|";}
+    29%{content: "a Freel|";}
+    30%{content: "a Freela|";}
+    31%{content: "a Freelan|";}
+    32%{content: "a Freelanc|";}
+    33%{content: "a Freelance|";}
+    34%{content: "a Freelancer|";}
+    35%{content: "a Freelancer.|";}
+    36%{content: "a Freelancer|";}
+    37%{content: "a Freelance|";}
+    38%{content: "a Freelanc|";}
+    39%{content: "a Freelan|";}
+    40%{content: "a Freela|";}
+    41%{content: "a Freel|";}
+    42%{content: "a Free|";}
+    43%{content: "a Fre|";}
+    44%{content: "a Fr|";}
+    45%{content: "a F|";}
+    46%{content: "a |";}
+    47%{content: "|";}
+    48%{content: "a|";}
+    49%{content: "a P|";}
+    50%{content: "a Ph|";}
+    51%{content: "a Pho|";}
+    52%{content: "a Phot|";}
+    53%{content: "a Photo|";}
+    54%{content: "a Photog|";}
+    55%{content: "a Photogr|";}
+    56%{content: "a Photogra|";}
+    57%{content: "a Photograp|";}
+    58%{content: "a Photograph|";}
+    59%{content: "a Photographe|";}
+    60%{content: "a Photographer|";}
+    61%{content: "a Photographer.|";}
+    62%{content: "a Photographer|";}
+    63%{content: "a Photographe|";}
+    64%{content: "a Photograph|";}
+    65%{content: "a Photograp|";}
+    66%{content: "a Photogra|";}
+    67%{content: "a Photogr|";}
+    68%{content: "a Photog|";}
+    69%{content: "a Photo|";}
+    70%{content: "a Phot|";}
+    71%{content: "a Pho|";}
+    72%{content: "a Ph|";}
+    73%{content: "a P|";}
+    74%{content: "a |";}
+    75%{content: "|";}
+    76%{content: "a|";}
+    77%{content: "a D|";}
+    78%{content: "a De|";}
+    79%{content: "a Des|";}
+    80%{content: "a Desi|";}
+    81%{content: "a Desig|";}
+    82%{content: "a Design|";}
+    83%{content: "a Designe|";}
+    84%{content: "a Designer|";}
+    85%{content: "a Designer.|";}
+    86%{content: "a Designer|";}
+    87%{content: "a Designe|";}
+    88%{content: "a Design|";}
+    89%{content: "a Desig|";}
+    90%{content: "a Desi|";}
+    91%{content: "a Des|";}
+    92%{content: "a De|";}
+    94%{content: "a D|";}
+    96%{content: "a |";}
+    99%{content: "|";}
+}
+.cover .cover-content p
+{
+    font-size: 20px;
+    font-weight: 400;
+}
+.cover .cover-content button
+{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 40px;
+    border: #20c997 2px solid;
+    background-color: transparent;
+    color: #20c997;
+    border-radius: 50rem;
+    transition: color 0.5s , background-color 0.5s ;
+}
+.cover .cover-content button:hover
+{
+    color: white;
+    background-color: #20c997;
+}
+/*-----Section 2-----*/
+.section2 .about-header,.about-content1,.about-content2
+{
+    margin: 40px 0px;
+}
+/*Section 2 Header*/
+.section2 .about-header
+{
+    color: #212529;
+    position: relative;
+}
+.section2 .about-header h2
+{
+    font-size: 130px;
+    opacity: 5%;
+    text-align: center;
+}
+.section2 .about-header .know-me-more
+{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 0%;
+    font-size: 30px;
+}
+.section2 .about-header .know-me-more h4::after
+{
+    content: "";
+    background-color: #20c997;
+    width: 80px;
+    height: 3px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+/*Section 2 Content1*/
+.section2 .about-content1
+{
+    display: flex;
+    color: #212529;
+}
+.section2 .about-content1 .info1
+{
+    width: 60%;
+}
+.section2 .about-content1 .info2
+{
+    width: 40%;
+}
+.section2 .about-content1 .info1 span
+{
+    color: #20c997;
+}
+.section2 .about-content1 .info2 .inner
+{
+    width: 70%;
+    margin: 0px auto;
+}
+.section2 .about-content1 .info2 .inner ul h4
+{
+    position: relative;
+}
+.section2 .about-content1 .info2 .inner ul h4::after
+{
+    content: "";
+    background-color:#eaeaea;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+}
+.section2 .about-content1 .info2 .inner ul li
+{
+    list-style-type: none;
+    padding: 10px 0px;
+}
+.section2 .about-content1 .info2 .inner ul li span
+{
+    font-weight: bold;
+}
+.section2 .about-content1 .info2 .inner ul li .email
+{
+    font-weight: normal;
+    color: #20c997;
+}
+.section2 .about-content1 .info2 .inner button
+{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 40px;
+    border: #20c997 2px solid;
+    background-color: #20c997;
+    color: white;
+    border-radius: 50rem;
+    transition: all 0.5s;
+}
+.section2 .about-content1 .info2 .inner button:hover
+{
+    background-color: #158f6a;
+    border: #158f6a 2px solid;
+}
+/*Section 2 Content2*/
+.section2 .about-content2
+{
+    display: flex;
+    color: #212529;
+}
+.section2 .about-content2 .stat
+{
+    width: 25%;
+    text-align: center;
+}
+.section2 .about-content2 .stat h3
+{
+    font-size: 50px;
+}
+.section2 .about-content2 h4
+{
+    position: relative;
+}
+.section2 .about-content2 h4::after
+{
+    content: "";
+    background-color:#eaeaea;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+/*-----Section 3-----*/
+.section3
+{
+    background-color: #f8f9fa;
+    padding: 20px 0px;
+}
+/*Section 3 Header*/
+.section3 .services-header
+{
+    color: #212529;
+    position: relative;
+    margin: 40px 0px;
+}
+.section3 .services-header h2
+{
+    font-size: 130px;
+    opacity: 5%;
+    text-align: center;
+}
+.section3 .services-header .what-i-do
+{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 0%;
+    font-size: 30px;
+}
+.section3 .services-header .what-i-do h4
+{
+    position: relative;
+}
+.section3 .services-header .what-i-do h4::after
+{
+    content: "";
+    background-color: #20c997;
+    width: 80px;
+    height: 3px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+/*Section 3 Content*/
+.section3 .service-content ul
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.section3 .service-content ul li
+{
+    list-style-type: none;
+    width: 50%;
+    display: flex;
+    margin: 15px 0px;
+}
+.section3 .service-content ul li img
+{
+    width: 70%;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 15px rgba(147, 147, 147, 0.3);
+}
+.section3 .service-content ul li .icon
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 15%;
+}
+.section3 .service-content ul li .text
+{
+    width: 80%;
+}
+.section3 .service-content ul li .text h2
+{
+    font-weight: 500;
+    font-size: 20px;
+}
+.section3 .service-content ul li .text p
+{
+    font-weight: 300;
+    font-size: 16px;
+}
+/*-----Section 4-----*/
+.section4
+{
+    padding: 20px 0px;
+}
+/*Section 4 Header*/
+.section4 .summary-header
+{
+    color: #212529;
+    position: relative;
+    margin: 40px 0px;
+}
+.section4 .summary-header h2
+{
+    font-size: 130px;
+    opacity: 5%;
+    text-align: center;
+}
+.section4 .summary-header .resume
+{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 0%;
+    font-size: 30px;
+}
+.section4 .summary-header .resume h4
+{
+    position: relative;
+}
+.section4 .summary-header .resume h4::after
+{
+    content: "";
+    background-color: #20c997;
+    width: 80px;
+    height: 3px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+/*Section 4 Content*/
+.section4 .summary-content
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.section4 .summary-content .card-title
+{
+    font-weight: 600;
+    margin: 20px 0px;
+    font-size: 25px;
+    padding: 10px;
+}
+.section4 .my-education
+{
+    width: 50%;
+}
+.section4 .my-experience
+{
+    width: 50%;
+}
+.section4 .card
+{
+    border: #dee2e6 1px solid;
+    border-radius: 5px;
+    padding: 15px;
+}
+.section4 .card h3
+{
+    width: 15%;
+    color: white;
+    background-color: #20c997;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+.section4 .card h2
+{
+    margin: 5px 0px;
+    font-weight: 500;
+}
+.section4 .card p
+{
+    font-weight: 400;
+}
+.section4 .card span
+{
+    color: #dc3545;
+}
+.section4 .summary-content .card-padding
+{
+    padding: 10px;
+}
+.section4 .my-skills
+{
+    width: 100%;
+    margin: 20px 0px;
+}
+.section4 .my-skills .group-1,.group-2
+{
+    width: 50%;
+}
+.section4 .my-skills .process-title
+{
+    display: flex;
+    justify-content: space-between;
+}
+.section4 .my-skills .inner
+{
+    display: flex;
+}
+.section4 .my-skills .group-1
+{
+    padding-right: 10px;
+}
+.section4 .my-skills .group-1
+{
+    padding-left: 10px;
+}
+.section4 .my-skills .skill-1,.skill-2,.skill-3,.skill-4,.skill-5,.skill-6
+{
+    padding-bottom: 30px;
+}
+.section4 .my-skills .process-bar .process-1,.process-2,.process-3,.process-4,.process-5,.process-6
+{
+    position: relative;
+}
+.section4 .my-skills .process-bar .process-1::before,.process-2::before,.process-3::before,.process-4::before,.process-5::before,.process-6::before
+{
+    content: "";
+    width: 100%;
+    height: 10px;
+    background-color: #e9ecef;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 10px;
+}
+.section4 .my-skills .process-bar .process-1::after
+{
+    content: "";
+    width: 65%;
+    height: 10px;
+    background-color: #20c997;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 10px;
+}
+.section4 .my-skills .process-bar .process-2::after
+{
+    content: "";
+    width: 95%;
+    height: 10px;
+    background-color: #20c997;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 10px;
+}
+.section4 .my-skills .process-bar .process-3::after
+{
+    content: "";
+    width: 80%;
+    height: 10px;
+    background-color: #20c997;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 10px;
+}
+.section4 .my-skills .process-bar .process-4::after
+{
+    content: "";
+    width: 70%;
+    height: 10px;
+    background-color: #20c997;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 10px;
+}
+.section4 .my-skills .process-bar .process-5::after
+{
+    content: "";
+    width: 60%;
+    height: 10px;
+    background-color: #20c997;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 10px;
+}
+.section4 .my-skills .process-bar .process-6::after
+{
+    content: "";
+    width: 99%;
+    height: 10px;
+    background-color: #20c997;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 10px;
+}
+.section4 .summary-content .cv
+{
+    width: 100%;
+    text-align: center;
+}
+.section4 .summary-content .cv button
+{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 40px;
+    border: gray 2px solid;
+    background-color: transparent;
+    color: gray;
+    border-radius: 50rem;
+    transition: all 0.5s;
+}
+.section4 .summary-content .cv button:hover
+{
+    background-color: gray;
+    color: white;
+}
+/*-----Section 5-----*/
+.section5
+{
+    background-color: #f8f9fa;
+    padding: 20px 0px;
+}
+/*Section 5 Header*/
+.section5 .portfolio-header
+{
+    color: #212529;
+    position: relative;
+    margin: 40px 0px;
+}
+.section5 .portfolio-header h2
+{
+    font-size: 130px;
+    opacity: 5%;
+    text-align: center;
+}
+.section5 .portfolio-header .my-work
+{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 0%;
+    font-size: 30px;
+}
+.section5 .portfolio-header .my-work h4
+{
+    position: relative;
+}
+.section5 .portfolio-header .my-work h4::after
+{
+    content: "";
+    background-color: #20c997;
+    width: 80px;
+    height: 3px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+/*Section 5 Content*/
+.section5 .portfolio-list
+{
+    width: 100%;
+}
+.section5 .portfolio-list .inner
+{
+    margin: 0px auto;
+    width: 20%;
+}
+.section5 .portfolio-list ul
+{
+    text-align: center;
+    display: flex;
+}
+.section5 .portfolio-list li
+{
+    font-weight: 400;
+    list-style: none;
+    margin: 20px 10px;
+}
+.section5 .portfolio-list span
+{
+    color: #20c997;
+    border-bottom: #20c997 2px solid;
+}
+.section5 .pics
+{
+    display: flex;
+    margin: 20px 0px;
+}
+.section5 .pics .col
+{
+    width: 33.333%;
+}
+.section5 .pics .col img
+{
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+}
+/*-----Section 6-----*/
+.section6
+{
+    background-color: white;
+    padding: 20px 0px;
+}
+/*Section 6 Header*/
+.section6 .testimonial-header
+{
+    color: #212529;
+    position: relative;
+    margin: 40px 0px;
+}
+.section6 .testimonial-header h2
+{
+    font-size: 130px;
+    opacity: 5%;
+    text-align: center;
+}
+.section6 .testimonial-header .client-speak
+{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 0%;
+    font-size: 30px;
+}
+.section6 .testimonial-header .client-speak h4
+{
+    position: relative;
+}
+.section6 .testimonial-header .client-speak h4::after
+{
+    content: "";
+    background-color: #20c997;
+    width: 80px;
+    height: 3px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+/*Section 6 Content*/
+.section6 .comments
+{
+    display: flex;
+}
+.section6 .comments .container
+{
+    border-radius: 5px;
+    background-color: rgb(233, 233, 233);
+    width: 45%;
+    margin: 0px auto;
+    padding: 50px;
+}
+.section6 .comments .container .pic img
+{
+    border-radius: 50%;
+    float: left;
+}
+.section6 .comments .container .pic h2,h3
+{
+    font-weight: 500;
+}
+.section6 .comments .container .pic h3
+{
+    font-size: 16px;
+    font-weight: 400;
+}
+.section6 .comments .container .info .stars,p,.stars
+{
+    margin: 10px 0px;
+}
+.section6 .comments .container .info .stars img
+{
+    width: 3%;
+}
+/*-----Section 7-----*/
+.section7
+{
+    background-color: #f8f9fa;
+    padding: 20px 0px;
+}
+/*Section 7 Header*/
+.section7 .contact-header
+{
+    color: #212529;
+    position: relative;
+    margin: 40px 0px;
+}
+.section7 .contact-header h2
+{
+    font-size: 130px;
+    opacity: 5%;
+    text-align: center;
+}
+.section7 .contact-header .get-in-touch
+{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 0%;
+    font-size: 30px;
+}
+.section7 .contact-header .get-in-touch h4
+{
+    position: relative;
+}
+.section7 .contact-header .get-in-touch h4::after
+{
+    content: "";
+    background-color: #20c997;
+    width: 80px;
+    height: 3px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+/*Section 6 Content*/
+/*-----Section 8-----*/
